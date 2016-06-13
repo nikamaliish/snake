@@ -10,16 +10,20 @@ namespace Snake2
     {
         static void Main(string[] args)
         {
-            Draw(3, 5, '#');
+            Point p1 = new Point();
+            p1.x = 3;
+            p1.y = 5;
+            p1.sym = '*';
+            p1.Draw();
+
+            Point p2 = new Point();
+            p2.x = 6;
+            p2.y = 2;
+            p2.sym = '#';
+            p2.Draw();
 
             Console.ReadLine();
         }
-
-        static void Draw (int x, int y, char sym)
-    {
-            Console.SetCursorPosition(x, y);
-            Console.Write(sym);
-    }
 
     }
         
