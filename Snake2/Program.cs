@@ -16,8 +16,16 @@ namespace Snake2
             Point p2 = new Point(6, 2, '#');
             p2.Draw();
 
+            HorizontalLine horLine1 = new HorizontalLine(0, 79,0, '+');
+            VerticalLine verLine1 = new VerticalLine(0, 24, 0, '+');
+            VerticalLine verLine2 = new VerticalLine(0, 24, 79, '+');
+            HorizontalLine horLine2 = new HorizontalLine(0, 79, 24, '+');
+
+            Console.SetCursorPosition(1, 1);
+
             Console.ReadLine();
         }
+               
 
     }
         
