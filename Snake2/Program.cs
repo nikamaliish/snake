@@ -10,23 +10,23 @@ namespace Snake2
     {
         static void Main(string[] args)
         {
-            Point p1 = new Point(3, 5, '*');
+            Console.SetBufferSize(80, 25);
+
+            //Отрисовка рамочки
+            HorizontalLine upLine = new HorizontalLine(0, 78, 0, '+');
+            VerticalLine leftLine = new VerticalLine(0, 24, 0, '+');
+            VerticalLine rightLine = new VerticalLine(0, 24, 78, '+');
+            HorizontalLine downLine = new HorizontalLine(0, 78, 24, '+');
+            upLine.Draw();
+            leftLine.Draw();
+            rightLine.Draw();
+            downLine.Draw();
+
+            //Отрисовка точек
+            Point p1 = new Point(4, 5, '*');
             p1.Draw();
-
-            Point p2 = new Point(6, 2, '#');
-            p2.Draw();
-
-            HorizontalLine horLine1 = new HorizontalLine(0, 79,0, '+');
-            VerticalLine verLine1 = new VerticalLine(0, 24, 0, '+');
-            VerticalLine verLine2 = new VerticalLine(0, 24, 79, '+');
-            HorizontalLine horLine2 = new HorizontalLine(0, 79, 24, '+');
-
-            Console.SetCursorPosition(1, 1);
 
             Console.ReadLine();
         }
-               
-
     }
-        
 }
